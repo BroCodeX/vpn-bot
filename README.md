@@ -1,8 +1,8 @@
 # 📊 Telegram VPN Bot
 
 [![Test-CI](https://github.com/BroCodeX/BroX-VPNBot/actions/workflows/tests.yml/badge.svg)](https://github.com/BroCodeX/BroX-VPNBot/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5a27dcb9c19abab7f0bc/maintainability)](https://codeclimate.com/github/BroCodeX/BroX-VPNBot/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5a27dcb9c19abab7f0bc/test_coverage)](https://codeclimate.com/github/BroCodeX/BroX-VPNBot/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/80423c169b19ad269653/maintainability)](https://codeclimate.com/github/BroCodeX/vpn-bot/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/80423c169b19ad269653/test_coverage)](https://codeclimate.com/github/BroCodeX/vpn-bot/test_coverage)
 
 Telegram-бот для генерации и управления конфигурациями VPN. Позволяет пользователям получать индивидуальные настройки для подключения, проверять статус серверов, а также продлевать или изменять подписки.
 
