@@ -2,7 +2,9 @@ package brocodex.vpn.component;
 
 import brocodex.vpn.handler.CallbackHandler;
 import brocodex.vpn.handler.CommandHandler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.telegram.telegrambots.client.okhttp.OkHttpTelegramClient;
 import org.telegram.telegrambots.longpolling.BotSession;
 import org.telegram.telegrambots.longpolling.interfaces.LongPollingUpdateConsumer;
 import org.telegram.telegrambots.longpolling.starter.AfterBotRegistration;
@@ -23,8 +25,9 @@ public class VpnBot implements SpringLongPollingBot, LongPollingSingleThreadUpda
 
     private final CallbackHandler callbackHandler;
 
+    @Autowired
     public VpnBot(TelegramClient telegramClient, CommandHandler commandHandler, CallbackHandler callbackHandler) {
-        this.telegramClient = telegramClient;
+        this.telegramClient = new OkHttpTelegramClient(getBotToken());
         this.commandHandler = commandHandler;
         this.callbackHandler = callbackHandler;
     }

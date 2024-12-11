@@ -22,7 +22,7 @@ public class User implements BaseModel{
     private Long id;
 
     @NotBlank
-    private String userName;
+    private String username;
 
     @NotNull
     @Column(unique = true, nullable = false)
