@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    host: "localhost"
+    port: ${RABBIT-PORT}
+    username: ${RABBIT-USER}
+    password: ${RABBIT-PASS}
+  application:
+    name: fbot
+  output:
+    ansi:
+      enabled: always
+  profiles:
+    default: "dev"
+
+server:
+  port: 8182
+
+logging:
+  level:
+    root: DEBUG
